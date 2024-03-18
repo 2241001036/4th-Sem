@@ -8,5 +8,5 @@ public class Main {
         C2.setMake("Hyundai");
         C2.setModel("Creta");
         System.out.println("Initial make and model of Car1: " + C2.getMake() + " " + C2.getModel());
-    }2
+    }
 }
