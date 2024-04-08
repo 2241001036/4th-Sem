@@ -4,13 +4,9 @@ import java.util.TreeMap;
 public class AddressBook {
     public static void main(String[] args) {
         TreeMap<String, Address> addressBook = new TreeMap<>();
-
-        // Adding addresses to the TreeMap
-        addressBook.put("John", new Address("123", "Main Street", "City A"));
-        addressBook.put("Alice", new Address("456", "Broadway", "City B"));
-        addressBook.put("Bob", new Address("789", "Oak Avenue", "City C"));
-
-        // Using an iterator to display the TreeMap
+        addressBook.put("Aryan", new Address("103", "RB", "Jatni"));
+        addressBook.put("Danish", new Address("102", "DB", "Cuttack"));
+        addressBook.put("Aman", new Address("101", "MR", "Rourkela"));
         System.out.println("Address details:");
         Iterator<String> iterator = addressBook.keySet().iterator();
         while (iterator.hasNext()) {

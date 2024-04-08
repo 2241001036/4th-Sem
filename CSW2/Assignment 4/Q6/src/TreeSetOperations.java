@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.TreeSet;
+
 public class TreeSetOperations {
     public static void main(String[] args) {
         TreeSet<Integer> treeSet = new TreeSet<>();
@@ -10,17 +11,17 @@ public class TreeSetOperations {
 
         // (a.) Display the TreeSet
         System.out.println("TreeSet elements: " + treeSet);
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         // (b.) Ask the user to enter a number and search if it's present in the list
         System.out.print("Enter a number to search: ");
-        int searchNumber = scanner.nextInt();
+        int searchNumber = sc.nextInt();
         boolean isPresent = treeSet.contains(searchNumber);
         System.out.println("Is " + searchNumber + " present in the TreeSet? " + isPresent);
 
         // (c.) Remove an element from the TreeSet
         System.out.print("Enter the number to remove from the TreeSet: ");
-        int numberToRemove = scanner.nextInt();
+        int numberToRemove = sc.nextInt();
         if (treeSet.contains(numberToRemove)) {
             treeSet.remove(numberToRemove);
             System.out.println("Number " + numberToRemove + " removed successfully.");

@@ -6,9 +6,9 @@ public class Main
     public static void main(String[] args)
     {
         ArrayListUser arrayListUser = new ArrayListUser();
-        arrayListUser.addUser(new User("Alice", 25));
-        arrayListUser.addUser(new User("Bob", 30));
-        arrayListUser.addUser(new User("Charlie", 20));
+        arrayListUser.addUser(new User("Aryan", 25));
+        arrayListUser.addUser(new User("Danish", 30));
+        arrayListUser.addUser(new User("Aman", 20));
         arrayListUser.printUsers();
         arrayListUser.sortByAge();
         System.out.println("\nSorted Users by Age:");

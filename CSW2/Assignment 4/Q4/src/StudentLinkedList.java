@@ -5,9 +5,9 @@ public class StudentLinkedList
     public static void main(String[] args)
     {
         LinkedList<Student> students = new LinkedList<>();
-        students.add(new Student("Alice", 20, 85.5));
-        students.add(new Student("Bob", 22, 75.0));
-        students.add(new Student("Charlie", 21, 90.2));
+        students.add(new Student("Aryan", 20, 7.18));
+        students.add(new Student("Danish", 21, 7.82));
+        students.add(new Student("Aman", 22, 9.02));
 
         // (a.) Display the list
         System.out.println("List of students:");
@@ -22,8 +22,10 @@ public class StudentLinkedList
         Student searchStudent = new Student(name, age, mark);
         boolean isContained = students.contains(searchStudent);
         boolean isReferenced = false;
-        for (Student student : students) {
-            if (student == searchStudent) {
+        for (Student student : students)
+        {
+            if (student == searchStudent)
+            {
                 isReferenced = true;
                 break;
             }
